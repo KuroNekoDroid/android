@@ -1304,4 +1304,5 @@
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/crdroid.xml" />
+  <include name="snippets/kndroid.xml" />
 </manifest>

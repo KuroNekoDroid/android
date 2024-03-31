@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="kuroneko"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="8"
+           revision="refs/heads/14.0" />
+
+  <!-- crDroid additions -->
+  <project path="android" name="KuroNekoDroid/android" remote="kuroneko" />
+
+  <project path="art" name="KuroNekoDroid/android_art" groups="pdk" remote="kuroneko" />
+
+  <project path="bionic" name="KuroNekoDroid/android_bionic" groups="pdk" remote="kuroneko" />
+
+  <project path="build/make" name="KuroNekoDroid/android_build" groups="pdk,sysui-studio" remote="kuroneko" >
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+
+  <project path="build/soong" name="KuroNekoDroid/android_build_soong" groups="pdk,tradefed" remote="kuroneko" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <project path="frameworks/av" name="KuroNekoDroid/android_frameworks_av" groups="pdk" remote="kuroneko" />
+  <project path="frameworks/base" name="KuroNekoDroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="kuroneko" />
+  <project path="frameworks/native" name="KuroNekoDroid/android_frameworks_native" groups="pdk" remote="kuroneko" />
+  <project path="frameworks/opt/telephony" name="KuroNekoDroid/android_frameworks_opt_telephony" groups="pdk" remote="kuroneko" />
+  <project path="packages/apps/crDroidSettings" name="KuroNekoDroid/android_packages_apps_KuroNekoSettings" remote="kuroneko" />
+  <project path="packages/apps/Settings" name="KuroNekoDroid/android_packages_apps_Settings" groups="pdk-fs" remote="kuroneko" />
+  <project path="system/core" name="KuroNekoDroid/android_system_core" groups="pdk" remote="kuroneko" />
+  <project path="vendor/lineage" name="KuroNekoDroid/android_vendor_crdroid" remote="kuroneko" />
+</manifest>

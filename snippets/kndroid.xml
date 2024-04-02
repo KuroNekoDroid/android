@@ -28,6 +28,7 @@
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
+  <project path="hardware/xiaomi" name="KuroNekoDroid/android_hardware_xiaomi" groups="pdk" remote="kuroneko" />
   <project path="frameworks/av" name="KuroNekoDroid/android_frameworks_av" groups="pdk" remote="kuroneko" />
   <project path="frameworks/base" name="KuroNekoDroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="kuroneko" />
   <project path="frameworks/native" name="KuroNekoDroid/android_frameworks_native" groups="pdk" remote="kuroneko" />

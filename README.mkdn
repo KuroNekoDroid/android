@@ -17,5 +17,5 @@ repo init -u https://github.com/KuroNekoDroid/android.git -b lineage-20.0 --git-
 ```
 Then to sync up:
 ```
-repo sync
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
